@@ -1,4 +1,4 @@
-#part 1
+#part 1(set the value of the vector)
 makeVector <- function(x = numeric()) {
         m <- NULL
         set <- function(y) {
@@ -12,7 +12,9 @@ makeVector <- function(x = numeric()) {
              setmean = setmean,
              getmean = getmean)
 }
-#part 2
+
+
+#part 2 (get the value of the vector)
 cachemean <- function(x, ...) {
         m <- x$getmean()
         if(!is.null(m)) {
@@ -24,7 +26,9 @@ cachemean <- function(x, ...) {
         x$setmean(m)
         m
 }
-#part 3
+
+
+#part 3 (set the value of the mean)
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
@@ -39,7 +43,9 @@ makeCacheMatrix <- function(x = matrix()) {
              setInverse = setInverse,
              getInverse = getInverse)
 }
-#part 4
+
+
+#part 4 (get the value of the mean)
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv <- x$getInverse()
